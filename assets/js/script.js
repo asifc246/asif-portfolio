@@ -1,0 +1,10 @@
+$(document).read(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop>100){
+            $('.nav').addClass('solid');
+        }
+        else{
+            $('.nav').removeClass('solid')
+        }
+    })
+})
