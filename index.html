@@ -1,129 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body{
-            margin: 0;
-            font-family: sans-serif;
-        }
-        header{
-            position: fixed;
-            width: 100%;
-        }
-        .nav{
-            color: #ffff;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            background-color: rgba(56, 54, 54, 0.582);
-        }
-        .nav::after{
-            content: "";
-            background-color: aqua;
-        }
-        .nav-items a{
-            padding: 20px;
-        }
-        .nav #icon{
-            display: none;
-        }
-
-        @media screen and (max-width:600px) {
-            .nav-items{
-                display: none;
-            }
-            .nav #icon{
-                float: right;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 600px){
-            .nav .responsive{
-                position: relative;
-            }
-            .topnav.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            .nav .responsive a{
-                float: none;
-                display: block;
-                text-align: right;
-            }
-        }
-
-        .banner{
-            background-image: url('assets/images/logo.jpg');
-            background-size: cover;
-            height: 600px;
-        }
-    </style>
 </head>
-<body>
-    <header>
-        <nav class="nav" id="myNav">
-            <div class="nav-logo">
-                <img src="" alt="logo">
-            </div>
-            <div class="nav-items">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
-            </div>
-            <div class="nav-btn">
-                <button>Hire Me</button>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i id="icon" class="fa fa-bars"></i>
-              </a>
 
-        </nav>
-    </header>
-    
+<body>
+    <nav class="navbar" id="header">
+        <div class="logo"><img src="assets/images/logo.png" alt="logo" height="80px" width="100px"></div>
+        <div class="nav-items" id="myTopnav">
+            <a href="#banner">Home</a>
+            <a href="#about-me">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="" id="hire-me">Hire Me</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
     <section id="banner">
-        <div class="banner">
-            <div></div>
-            <div></div>
+        <div class="banner-text">
+            <h3>Hi,I'm Mohammed Asif</h3>
+            <h1>Fullstack Developer</h1>
+            <p>I am a Python developer with a deep understanding of software development principles and best practices.
+                I am passionate about using Python to build efficient and scalable solutions that solve real-world
+                problems.</p>
+            <button id="banner-btn1">Hire Me</button>
+            <button id="banner-btn2">My Portfolio</button>
+        </div>
+        <div class="banner-img">
+            <img src="assets/images/banner_img2.png" alt="image">
         </div>
     </section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ullam ipsam ab minima doloremque sequi cupiditate perferendis, corrupti minus sint molestias quas illum consectetur veritatis ipsum optio dicta repudiandae. Veniam?
-    Aperiam blanditiis magnam recusandae provident impedit? Quaerat assumenda temporibus suscipit deserunt sint, nihil error doloremque, quis pariatur laudantium aliquam doloribus magni rem excepturi itaque. Itaque labore at cupiditate modi veritatis.
-    Perspiciatis cum explicabo consequuntur blanditiis optio doloribus assumenda laborum ut aspernatur saepe totam est, vel nihil mollitia odio quam illum pariatur dolorum quod ex ipsa quas? Commodi laboriosam est cupiditate!
-    Totam laudantium ad voluptatem quia, libero nesciunt consequatur? Doloribus, exercitationem possimus. Placeat quas impedit suscipit quisquam molestiae ratione, quia tempora numquam? Tempora voluptatem exercitationem commodi repellendus recusandae natus doloribus qui!
-    Vero omnis suscipit velit officia assumenda placeat adipisci, sint, error reprehenderit quisquam eveniet deleniti non nobis ea? Tempora qui voluptate corrupti molestias, perferendis, unde culpa illo voluptas sint nostrum iste.
-    Nulla maiores, totam fugiat expedita voluptatem dolorum deserunt et. Harum dolorem ratione et assumenda quibusdam sequi, sed, voluptates ab suscipit ex a dolore ullam illo at ipsum iusto consequatur esse?
-    Nam quod consequatur officiis voluptatibus. Nesciunt aut ea officiis id voluptas consequatur natus minus. Consequuntur iure ducimus vel dolores autem, explicabo aspernatur, assumenda voluptatem totam facilis voluptas odit nihil exercitationem!
-    Necessitatibus voluptatum possimus magnam voluptas saepe, obcaecati laudantium ea eveniet veniam rerum suscipit tenetur officia modi eligendi. Totam et nobis velit recusandae hic optio accusantium quisquam accusamus inventore, pariatur nulla.
-    Tenetur impedit illo consequatur ullam aliquid dolorum sint quaerat quasi voluptas rem temporibus necessitatibus aspernatur doloribus voluptatibus aut odit eveniet, nulla nisi reprehenderit architecto odio asperiores vel pariatur? Voluptatibus, doloribus?
-    At modi consectetur nam ipsam odio voluptates beatae unde illum quas ducimus necessitatibus inventore, iusto quaerat architecto magni commodi voluptatum, quae minima, quasi quo sed! Dolor veniam neque ad deserunt.
-    Libero culpa perferendis eum hic. Recusandae culpa dolores consectetur vitae minus, delectus explicabo accusantium, quaerat quis illum, itaque fugit quam. Exercitationem harum soluta aspernatur blanditiis inventore dolor quas ipsam error?
-    Impedit possimus, mollitia est sint ex corrupti consequuntur! Perferendis modi ex dolorem laboriosam totam aperiam dicta dignissimos, dolorum, corrupti perspiciatis sunt aut ipsum accusantium velit error ullam molestias labore iure.
-    Vitae aut recusandae sapiente atque quos sint quia nulla expedita, ex mollitia minima repellat facere, dolorem dolorum perspiciatis iure nesciunt, iste est tenetur voluptas laudantium doloremque optio debitis quis. Animi.
-    Soluta beatae rerum eius fugiat tenetur quam omnis. Eligendi magnam quia ut porro, earum modi tenetur incidunt dolor vero alias veniam! Possimus, earum? Minus doloremque sed repellat, sunt ut id.
-    Commodi ipsam amet nemo fugit optio sunt velit doloremque harum mollitia aut autem ab nobis magni maiores architecto quaerat tempora atque eaque, pariatur iusto provident facilis voluptates dolorem! Inventore, maxime?
-    Iusto harum odio, quaerat saepe distinctio nulla magnam sapiente, maiores enim nihil a eius perferendis neque voluptate nisi incidunt autem earum odit? Dolorem explicabo commodi perspiciatis voluptatem magnam deserunt a!
-    Quasi minima, aut officiis, optio voluptates laborum id quis magni culpa possimus blanditiis, dolores sed cumque vel sint deleniti ex illum molestias fugit. Quae nihil dicta ullam ea autem ipsa.
-    Assumenda eveniet similique earum et beatae officia ipsam quo repudiandae minus quos fuga, quaerat quidem voluptatem debitis hic sint cum voluptatibus perferendis. Repellat perspiciatis obcaecati pariatur quisquam harum voluptas exercitationem!
-    Dolore non culpa qui quibusdam commodi sunt beatae in hic ea labore quia impedit maiores eum aliquid, sint dignissimos enim iste dicta. Cumque impedit possimus minima? Iusto tenetur iste quas?
-    Voluptatem praesentium perferendis nobis odio beatae laboriosam aut sint nostrum aliquam nihil, sed repellat inventore soluta, aperiam cupiditate ratione id earum iusto eligendi provident vero tempore? Corporis cum atque esse?</p>
 
-   <script>
-    function myFunction(){
-        var x = document.getElementById("myNav");
-        if(x.className === 'nav'){
-            x.className += " responsive";
+    <section id="about-me">
+        <div class="about-me-img">
+            <img src="assets/images/banner_img2.png" height="100%" alt="image">
+        </div>
+        <div class="about-me-text">
+            <h4>About Me</h4>
+            <h1>Fullstack developer</h1>
+            <p>I am a Python developer with a deep understanding of software development principles and best practices.
+                I am passionate about using Python to build efficient and scalable solutions that solve real-world
+                problems.</p>
+            <div id="line"></div>
+            <div class="about-me-details">
+                <div><b>Name</b>: Mohammed Asif</div>
+                <div><b>From</b>: Wayanad,Kerala,India.</div>
+                <div><b>Email</b>: asifc246@gmail.com</div>
+                <div><b>Phone</b>: 9544155794</div>
+            </div>
+            <div class="about-me-social">
+                <h4>Connect Me on</h4>
+                <a href="https://www.linkedin.com/in/mohammedasifc/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=9544155794" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </div>
+            <div class="about-me-btns">
+                <a href="" class="about-me-hire">Hire Me</a>
+                <a href="assets/cv/Mohammed_Asif_CV.pdf" download="" class="about-me-cv">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- skills -->
+    <section id="skills">
+        <div class="about-me-img" style="background-color: #232928;">
+            <img src="assets/images/skills_img.png" id="skills-img" style="object-fit: cover;" alt="image">
+        </div>
+        <div class="about-me-text">
+            <h4>My Skills</h4>
+            <h1>My Featured Skills</h1>
+            <p>I am a Python developer with a deep understanding of software development principles and best practices.
+                I am passionate about using Python to build efficient and scalable solutions that solve real-world
+                problems.</p>
+            <div class="skills-details">
+                <div><b>HTML</b></div>
+                <div><input type="range" disabled="true" value="80"></div>
+                <div><b>CSS</b></div>
+                <div><input type="range" disabled="true" value="60"></div>
+                <div><b>Javascript</b></div>
+                <div><input type="range" disabled="true" value="55"></div>
+                <div><b>Python</b></div>
+                <div><input type="range" disabled="true" value="60"></div>
+                <div><b>MySql</b></div>
+                <div><input type="range" disabled="true" value="80"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+
+    <section id="projects">
+        <h3>My Projects</h3>
+        <div class="projects-list">
+            <div class="project-item1" >
+                <img class="blur zoom" src="assets/images/p_img_1.jpg" alt="image" >
+                <div class="project-desc fade slide-up">
+                    <h3>Service Website</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque id libero ipsum corporis
+                    recusandae laboriosam dolores nisi similique obcaecati odit voluptatem commodi, assumenda error amet
+                    voluptates delectus sed vel?</p>
+                </div> 
+            </div>
+            <div class="project-item1">
+                <img class="blur zoom" src="assets/images/p_img_2.jpg" alt="image">
+                <div class="project-desc fade slide-up">
+                    <h3>Service Website</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque id libero ipsum corporis
+                    recusandae laboriosam dolores nisi similique obcaecati odit voluptatem commodi, assumenda error amet
+                    voluptates delectus sed vel?</p>
+                </div> 
+            </div>
+            <div class="project-item1">
+                <img class="blur zoom" src="assets/images/p_img_3.png" alt="image" >
+                <div class="project-desc fade slide-up">
+                    <h3>Service Website</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque id libero ipsum corporis
+                    recusandae laboriosam dolores nisi similique obcaecati odit voluptatem commodi, assumenda error amet
+                    voluptates delectus sed vel?</p>
+                </div> 
+                </div>
+                <div class="project-item1" >
+                    <img class="blur zoom" src="assets/images/p_img_4.png" alt="image" >
+                    <div class="project-desc fade slide-up">
+                        <h3>Service Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque id libero ipsum corporis
+                        recusandae laboriosam dolores nisi similique obcaecati odit voluptatem commodi, assumenda error amet
+                        voluptates delectus sed vel?</p>
+                    </div> 
+                </div>
+                <div class="project-item1" >
+                    <img class="blur zoom" src="assets/images/p_img_5.png" alt="image" >
+                    <div class="project-desc fade slide-up">
+                        <h3>Service Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque id libero ipsum corporis
+                        recusandae laboriosam dolores nisi similique obcaecati odit voluptatem commodi, assumenda error amet
+                        voluptates delectus sed vel?</p>
+                    </div> 
+                </div>
+                <div class="project-item1" >
+                    <img class="blur zoom" src="assets/images/p_img_6.png" alt="image" >
+                    <div class="project-desc fade slide-up">
+                        <h3>Service Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque id libero ipsum corporis
+                        recusandae laboriosam dolores nisi similique obcaecati odit voluptatem commodi, assumenda error amet
+                        voluptates delectus sed vel?</p>
+                    </div> 
+                </div>
+        </div>
+    </section>
+
+    <section id="softskill">
+        <div class="softskills-main">
+            <div class="softskills">
+                <img src="assets/images/icons8-teamwork-unscreen.gif" width="50px" height="50px">
+                <h4>TeamWork</h4>
+            </div>
+            <div class="softskills">
+                <img src="assets/images/icons8-time-unscreen.gif" width="50px" height="50px">
+                <h4>Time Management</h4>
+            </div>
+            <div class="softskills">
+                <img src="assets/images/icons8-project-management-unscreen.gif" width="50px" height="50px">
+                <h4>Creativity</h4>
+            </div>
+            <div class="softskills">
+                <img src="assets/images/icons8-mind-map-unscreen.gif" width="50px" height="50px">
+                <h4>Problem Solving</h4>
+            </div>
+            <div class="softskills">
+                <img src="assets/images/icons8-leadership-unscreen.gif" width="50px" height="50px">
+                <h4>Leadership</h4>
+            </div>
+            <div class="softskills">
+                <img src="assets/images/icons8-trust-unscreen.gif" width="50px" height="50px">
+                <h4>Empathy</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3>Want To Know More?</h3>
+        <div class="contact-main">
+            <div class="contact-sub">
+                <img src="assets/images/contact.jpg" alt="image">
+            </div>
+            <div class="contact-sub">
+                <form method="post" action="">
+                    <div class="form-container">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    
+                    <div class="form-container">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-container">
+                        <input type="number" name="phone" placeholder="Phone Number"  required>
+                    </div>
+                    <div class="form-container">
+                        <textarea name="message" placeholder="Message" rows="4"></textarea>
+                    </div>
+                    <div class="form-container">
+                        <button>Submit Now</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-one">
+            <div class="footer-one-sub"><h3>Mohammed Asif Portfolio</h3></div>
+            <div class="footer-one-sub">
+                <a href="tel:9544155794"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91 9544155894</a>
+                <a href="mailto:asifc246@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true">&nbsp;asifc246@gmail.com</i></a>
+                <a href="https://www.linkedin.com/in/mohammedasifc/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;mohammedasifc</a>
+            </div>
+        </div>
+        <div class="footer-two">
+            <div class="footer-two-sub">&copy; Mohammed Asif Portfolio.All rights reserved by <b>Mohammed Asif</b></div>
+            <div class="footer-two-sub">
+                <a href="tel:9544155794"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto:asifc246@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/mohammedasifc/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=9544155794" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav-items") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-items";
+            }
         }
-        else{
-            x.className = 'nav'
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("header").style.backgroundColor = "rgba(6, 31, 36, 0.9)";
+                document.getElementById("header").style.transition = "500ms all";
+            } else {
+                document.getElementById("header").style.backgroundColor = "rgba(6, 31, 36, 0)";
+            }
         }
-    }
-   </script>
+    </script>
 </body>
+
 </html>
